@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    link(href='/stylesheets/style.css', rel='stylesheet')
+    link(href='/stylesheets/global.css', rel='stylesheet')
+    link(href='/stylesheets/fonts.css', rel='stylesheet')
+  body
+    include components/ui/navbar
+    block content
+    //- JS
+    script(src='/javascripts/script.js')
