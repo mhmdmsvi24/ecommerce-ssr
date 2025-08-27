@@ -3,18 +3,20 @@
     top: 10px;
     border-radius: 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.171);
+    z-index: 999;
+    background-color: white;
 }
 
 .fixed__nav {
     position: static;
     top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.171);
 }
 
 #main__nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.171);
 
     .nav__wrapper {
         max-width: 1200px;
@@ -75,6 +77,89 @@
                 font-family: "roboto_condensedbold_italic";
                 font-size: 2em;
             }
+        }
+    }
+}
+
+.pc__wrapper {
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+    list-style-type: none;
+    user-select: none;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.carousel {
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    &:active {
+        cursor: grab;
+    }
+}
+
+.product__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    min-width: 300px;
+    max-width: 350px;
+    aspect-ratio: 1/1.3;
+    padding: 1rem;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid white;
+
+    .pc__bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .pc__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        z-index: 999;
+
+        .pc__like {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem;
+            border-radius: 50%;
+        }
+
+        .pc__link {}
+    }
+
+    .pc__separator {
+        flex-grow: 1;
+    }
+
+    .pc__footer {
+        display: flex;
+        justify-items: start;
+        align-items: end;
+        background-color: white;
+        z-index: 999;
+        height: fit-content;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border-radius: 0.7rem;
+
+        .pc__desc {
+            font-family: "roboto_condensedbold_italic";
+            color: rgba(0, 0, 0, 0.785);
         }
     }
 }

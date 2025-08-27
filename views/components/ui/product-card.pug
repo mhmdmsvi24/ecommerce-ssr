@@ -1,7 +1,13 @@
-div.product__card
-    div.pc__header
-        div.pc__like
-        div.pc__link
-    div.pc__separator
-    div.pc__footer
-        div.pc__desc
+include ./button
+
+mixin productCard(product)
+    div.product__card
+        img(src=product.img, alt=product.desc, draggable="false").pc__bg
+        div.pc__header
+            div.pc__like
+                img(src="/icons/heart.svg", width="24")
+            div.pc__link
+                +button("Buy Now")
+        div.pc__separator
+        div.pc__footer
+            div.pc__desc= product.desc

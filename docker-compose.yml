@@ -1,0 +1,48 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ecommerce-ssr-db
+    ports:
+      - "8001:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
+
+
+# services:
+#   db:
+#     image: postgres:15
+#     restart: always
+#     environment:
+#       POSTGRES_USER: user
+#       POSTGRES_PASSWORD: password
+#       POSTGRES_DB: ecommerce-ssr-db
+#     ports:
+#       - "5432:5432"
+#     volumes:
+#       - db_data:/var/lib/postgresql/data
+
+#   app:
+#     build: .
+#     restart: always
+#     ports:
+#       - "3000:3000"
+#     environment:
+#       DB_HOST: db
+#       DB_PORT: 5432
+#       DB_USER: user
+#       DB_PASS: password
+#       DB_NAME: testdb
+#     depends_on:
+#       - db
+#     volumes:
+#       - .:/app
+
+# volumes:
+#   db_data:

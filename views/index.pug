@@ -1,3 +1,8 @@
 extends layout
 
 block content
+    include components/ui/product-card
+    ul.pc__wrapper.carousel
+        each product in products
+            li
+                +productCard(product)

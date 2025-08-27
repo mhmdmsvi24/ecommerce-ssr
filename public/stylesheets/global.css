@@ -3,11 +3,10 @@
 *::after {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-body {
-    height: 10000px;
-}
+body {}
 
 html {
     font-family: 'roboto-thin', 'Times New Roman', Times, serif;

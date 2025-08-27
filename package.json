@@ -4,7 +4,7 @@
     "private": true,
     "type": "commonjs",
     "scripts": {
-        "dev": "NODE_ENV=development node ./bin/www"
+        "dev": "NODE_ENV=development node --watch ./bin/www"
     },
     "dependencies": {
         "cookie-parser": "~1.4.4",
