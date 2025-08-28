@@ -3,7 +3,7 @@ extends layout
 block content
     include components/product-card
     include components/ui/button
-    header.container
+    section.container.top__intro
         .header__tagline
             h1 Access High Quality, <br/> <span>Eco-Friendly</span> Products <br/> and services
                 div
@@ -18,7 +18,8 @@ block content
             .hc__text
                 .l1 500+
                 .l2 Happy Customers
-    ul.pc__wrapper.carousel.container
-        each product in products
-            li
-                +productCard(product)
+    section.container
+        ul.pc__wrapper.carousel
+            each product in products
+                li
+                    +productCard(product)

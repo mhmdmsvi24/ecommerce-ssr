@@ -57,7 +57,6 @@
 
                 .nav__link {
                     padding: .5rem 1rem;
-                    background-color: white;
                     color: black;
                     text-decoration: none;
                     font-weight: 800;
@@ -88,6 +87,7 @@
     grid-auto-flow: column;
     list-style-type: none;
     user-select: none;
+    padding: 1rem;
 }
 
 .carousel {
@@ -167,7 +167,7 @@
     }
 }
 
-header {
+.top__intro {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -189,10 +189,9 @@ header {
 
         div {
             display: inline-flex;
-            align-items: center;
-            justify-content: space-between;
             gap: 1rem;
             margin: 0 1rem;
+            vertical-align: middle;
 
             img {
                 width: 30px;
