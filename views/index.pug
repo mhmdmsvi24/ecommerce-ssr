@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    include components/product-card
+    include components/ui/product-card
     include components/ui/button
     section.container.top__intro
         .header__tagline
@@ -18,8 +18,9 @@ block content
             .hc__text
                 .l1 500+
                 .l2 Happy Customers
-    section.container
+    section.container.top__products
         ul.pc__wrapper.carousel
             each product in products
                 li
                     +productCard(product)
+    include components/featured-product-card

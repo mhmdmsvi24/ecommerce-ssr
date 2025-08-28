@@ -1,0 +1,23 @@
+section.top__selling.container
+    div.ts__heading
+        div
+            div
+                h2 Top-Selling Product
+                    br
+                    | of the year collection
+            div
+                include ./ui/button
+                +button("See More Product", "btn-outline-thin")
+        div
+            p We do not divide our collections in seasons
+                br
+                | we create new models every week. and we
+                br
+                | in a few items.
+            +button("Shop Now", "btn-outline-thin")
+    div
+        include ui/featured-card
+        ul.fc__wrapper.carousel
+            each featuredProduct in featured
+                li
+                    +featuredCard(featuredProduct)

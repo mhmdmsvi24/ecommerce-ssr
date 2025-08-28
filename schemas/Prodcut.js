@@ -23,11 +23,19 @@ module.exports = new EntitySchema({
             type: "varchar",
             nullable: true
         },
+        rating: {
+            type: "decimal",
+            default: 0
+        },
         price: {
             type: "decimal",
             precision: 10,
             scale: 2,
             nullable: false
+        },
+        featured: {
+            type: "boolean",
+            default: false
         },
         available: {
             type: "boolean",
