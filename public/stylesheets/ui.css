@@ -1,6 +1,6 @@
 .btn {
     border-radius: 1rem;
-    font-family: "roboto-regular";
+    font-family: "roboto-medium_italic";
     padding: 4px 8px;
     border: none;
     background-color: transparent;
@@ -9,4 +9,15 @@
 
 .btn-outline {
     border: 1px solid rgba(0, 0, 0, 0.529);
+}
+
+.btn-fill {
+    background-color: rgb(43, 0, 82);
+    color: white;
+    font-family: "roboto-light";
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }

@@ -10,7 +10,8 @@
 
     & ::-webkit-scrollbar {
         display: inline-block;
-        height: 5px;
+        height: 3px;
+        width: 5px;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -30,7 +31,9 @@
 
 
 
-body {}
+body {
+    height: 2000px;
+}
 
 html {
     font-family: 'roboto-thin', 'Times New Roman', Times, serif;

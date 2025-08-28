@@ -2,12 +2,15 @@ doctype html
 html
   head
     title= Milka
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(href='/stylesheets/style.css', rel='stylesheet')
     link(href='/stylesheets/global.css', rel='stylesheet')
     link(href='/stylesheets/fonts.css', rel='stylesheet')
     link(href='/stylesheets/ui.css', rel='stylesheet')
+    link(href='/stylesheets/responsive.css', rel='stylesheet')
   body
-    include components/ui/navbar
+    include components/navbar
     block content
     //- JS
     script(src='/javascripts/script.js')

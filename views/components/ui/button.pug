@@ -1,2 +1,3 @@
-mixin button(text)
-    button(type="button").btn.btn-outline= text
+mixin button(text, styleClass='btn-outline')
+  button(class=['btn', styleClass].join(' '))
+    | #{text}
