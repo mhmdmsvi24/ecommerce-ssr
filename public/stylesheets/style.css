@@ -94,9 +94,10 @@
 }
 
 .carousel {
-    overflow-x: hidden;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+
 
     &:active {
         cursor: grab;
